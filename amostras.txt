@@ -1,0 +1,189 @@
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|ut
+5b727131bf469b49ad3b72351d7d8cf2?plid=znnNhNhW&t=beleza,celebridades,cinema,esportes,gremio,internacional,saude,sul,ultimas-noticias&sk=blue&tm=dark&plp=r&plw=&plh=&ct=&tb=Videos%2520Recomendados&tbbg= HTTP/1.1
+Host: iplayer.azureedge.net
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: sambaads_player_session=b836d2e2-3842-4548-5dc6-2b6700fe803a; nav43244=69ab101cf8d76262e6702262d09|2_334; _ga=GA1.2.682311743.1476502427
+If-Modified-Since: Mon, 28 Nov 2016 19:45:30 GMT
+
+
+5b727131bf469b49ad3b72351d7d8cf2?plid=znnNhNhW&t=beleza,celebridades,cinema,esportes,gremio,internacional,saude,sul,ultimas-noticias&sk=blue&tm=dark&plp=r&plw=&plh=&ct=&tb=Videos%2520Recomendados&tbbg= HTTP/1.1
+Host: iplayer.azureedge.net
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: sambaads_player_session=b836d2e2-3842-4548-5dc6-2b6700fe803a; nav43244=69ab101cf8d76262e6702262d09|2_334; _ga=GA1.2.682311743.1476502427
+If-Modified-Since: Mon, 28 Nov 2016 19:45:30 GMT
+
+
+GET /nanoWidget/externals/obFrame/obFrame.htm HTTP/1.1
+Host: widgets.outbrain.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: obuid=3be7c786-22a8-4fc3-9cc1-409dc3bb9591; _fcap_CAM4=AHAAZgBjAGEAcAACAAAAADufMt8AZAMDIgIAXQMCDkIAiAMBa4QADAMBZckAXQMBZcEAZAMDrQAAFgMDR54AUAIHAQCBAwG7xgAgAoRNAFoDBSRAADkDBnLEACQDBpF4AEgCIMAACwMGBQIAHAMD4MAAGQMBzgEAQAMD7U0AiQMDEIYB7gMBwAAAFgMFAQUAUAIUFwAeAwUyxQAtAwEFhgB1; _ofcap_DOC1=AG8AZgBjAGEAcAACAAAAAFflR+cAowQPXLZcAu0EZtxP3AHKBGedW50AXgQBsFyxAGYDvGm7AF0EAWGkYQBfA9bF1gDEA786vgH4BAG1pLYAVwMKQgsAxAQBOtw0AMsDGUgcAcMEFnhzeQElBBf88PwAdgQBnciBAIEDlwWTAnUDnuaeAGQDgz+OASIDRrhGAF4EAWfoZQLNBAGqUKoBFQQDbtBuAFcEAxCEFgByBAHUdNUB9QQBpEimAfsDneGiApQEFrCBsgCeBB6k+aIAYAQL4n/gAF0EA8hrxgBYBBdzqmMCCgQX4l3iAHwDyGzIAtUEAViJWQD2BAEnOSQCFwMJQw4AXgQOgeiCAVgEHAktCAD/BBOgaaAAZAQBkfnuALwECuOh4AKKBARYX14A4gQOpx+lAeEEGL/RsQByBAhcjFwBhgQQJ4onA4YEEzRHMQC5BBNHS0cCEwQM3wfdAOcEDPzI/ACgAy9RMQDpA38AfgC2A3SpdgNYAzfoMQRVBAGP/4IBogMdihwA2wQCSFxzAFQEA/Us/wM+Ay8BKAN/AzFqLwEFBA
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+
+GET /nanoWidget/externals/obFrame/obFrame.htm HTTP/1.1
+Host: widgets.outbrain.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: obuid=3be7c786-22a8-4fc3-9cc1-409dc3bb9591; _fcap_CAM4=AHAAZgBjAGEAcAACAAAAADufMt8AZAMDIgIAXQMCDkIAiAMBa4QADAMBZckAXQMBZcEAZAMDrQAAFgMDR54AUAIHAQCBAwG7xgAgAoRNAFoDBSRAADkDBnLEACQDBpF4AEgCIMAACwMGBQIAHAMD4MAAGQMBzgEAQAMD7U0AiQMDEIYB7gMBwAAAFgMFAQUAUAIUFwAeAwUyxQAtAwEFhgB1; _ofcap_DOC1=AG8AZgBjAGEAcAACAAAAAFflR+cAowQPXLZcAu0EZtxP3AHKBGedW50AXgQBsFyxAGYDvGm7AF0EAWGkYQBfA9bF1gDEA786vgH4BAG1pLYAVwMKQgsAxAQBOtw0AMsDGUgcAcMEFnhzeQElBBf88PwAdgQBnciBAIEDlwWTAnUDnuaeAGQDgz+OASIDRrhGAF4EAWfoZQLNBAGqUKoBFQQDbtBuAFcEAxCEFgByBAHUdNUB9QQBpEimAfsDneGiApQEFrCBsgCeBB6k+aIAYAQL4n/gAF0EA8hrxgBYBBdzqmMCCgQX4l3iAHwDyGzIAtUEAViJWQD2BAEnOSQCFwMJQw4AXgQOgeiCAVgEHAktCAD/BBOgaaAAZAQBkfnuALwECuOh4AKKBARYX14A4gQOpx+lAeEEGL/RsQByBAhcjFwBhgQQJ4onA4YEEzRHMQC5BBNHS0cCEwQM3wfdAOcEDPzI/ACgAy9RMQDpA38AfgC2A3SpdgNYAzfoMQRVBAGP/4IBogMdihwA2wQCSFxzAFQEA/Us/wM+Ay8BKAN/AzFqLwEFBA
+
+GET /nanoWidget/externals/obFrame/obFrame.htm HTTP/1.1
+Host: widgets.outbrain.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: obuid=3be7c786-22a8-4fc3-9cc1-409dc3bb9591; _fcap_CAM4=AHAAZgBjAGEAcAACAAAAADufMt8AZAMDIgIAXQMCDkIAiAMBa4QADAMBZckAXQMBZcEAZAMDrQAAFgMDR54AUAIHAQCBAwG7xgAgAoRNAFoDBSRAADkDBnLEACQDBpF4AEgCIMAACwMGBQIAHAMD4MAAGQMBzgEAQAMD7U0AiQMDEIYB7gMBwAAAFgMFAQUAUAIUFwAeAwUyxQAtAwEFhgB1; _ofcap_DOC1=AG8AZgBjAGEAcAACAAAAAFflR+cAowQPXLZcAu0EZtxP3AHKBGedW50AXgQBsFyxAGYDvGm7AF0EAWGkYQBfA9bF1gDEA786vgH4BAG1pLYAVwMKQgsAxAQBOtw0AMsDGUgcAcMEFnhzeQElBBf88PwAdgQBnciBAIEDlwWTAnUDnuaeAGQDgz+OASIDRrhGAF4EAWfoZQLNBAGqUKoBFQQDbtBuAFcEAxCEFgByBAHUdNUB9QQBpEimAfsDneGiApQEFrCBsgCeBB6k+aIAYAQL4n/gAF0EA8hrxgBYBBdzqmMCCgQX4l3iAHwDyGzIAtUEAViJWQD2BAEnOSQCFwMJQw4AXgQOgeiCAVgEHAktCAD/BBOgaaAAZAQBkfnuALwECuOh4AKKBARYX14A4gQOpx+lAeEEGL/RsQByBAhcjFwBhgQQJ4onA4YEEzRHMQC5BBNHS0cCEwQM3wfdAOcEDPzI/ACgAy9RMQDpA38AfgC2A3SpdgNYAzfoMQRVBAGP/4IBogMdihwA2wQCSFxzAFQEA/Us/wM+Ay8BKAN/AzFqLwEFBA
+
+GET /nanoWidget/externals/obFrame/obFrame.htm HTTP/1.1
+Host: widgets.outbrain.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: obuid=3be7c786-22a8-4fc3-9cc1-409dc3bb9591; _fcap_CAM4=AHAAZgBjAGEAcAACAAAAADufMt8AZAMDIgIAXQMCDkIAiAMBa4QADAMBZckAXQMBZcEAZAMDrQAAFgMDR54AUAIHAQCBAwG7xgAgAoRNAFoDBSRAADkDBnLEACQDBpF4AEgCIMAACwMGBQIAHAMD4MAAGQMBzgEAQAMD7U0AiQMDEIYB7gMBwAAAFgMFAQUAUAIUFwAeAwUyxQAtAwEFhgB1; _ofcap_DOC1=AG8AZgBjAGEAcAACAAAAAFflR+cAowQPXLZcAu0EZtxP3AHKBGedW50AXgQBsFyxAGYDvGm7AF0EAWGkYQBfA9bF1gDEA786vgH4BAG1pLYAVwMKQgsAxAQBOtw0AMsDGUgcAcMEFnhzeQElBBf88PwAdgQBnciBAIEDlwWTAnUDnuaeAGQDgz+OASIDRrhGAF4EAWfoZQLNBAGqUKoBFQQDbtBuAFcEAxCEFgByBAHUdNUB9QQBpEimAfsDneGiApQEFrCBsgCeBB6k+aIAYAQL4n/gAF0EA8hrxgBYBBdzqmMCCgQX4l3iAHwDyGzIAtUEAViJWQD2BAEnOSQCFwMJQw4AXgQOgeiCAVgEHAktCAD/BBOgaaAAZAQBkfnuALwECuOh4AKKBARYX14A4gQOpx+lAeEEGL/RsQByBAhcjFwBhgQQJ4onA4YEEzRHMQC5BBNHS0cCEwQM3wfdAOcEDPzI/ACgAy9RMQDpA38AfgC2A3SpdgNYAzfoMQRVBAGP/4IBogMdihwA2wQCSFxzAFQEA/Us/wM+Ay8BKAN/AzFqLwEFBA
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362625.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; _t_tests={"[9fc1b2a5]":"B","lift_exp":"m"}; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.2.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.clicrbs.com.br|utmccn=(referral)|utmcmd=referral|utmcct=/rs/; RBS=JA_186.213.
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362753.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; RBS=JA_186.213.163.217.299271480362590979; __utmt=1; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.3.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.cl
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362753.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; RBS=JA_186.213.163.217.299271480362590979; __utmt=1; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.3.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.cl
+
+GET /rs/ HTTP/1.1
+Host: www.clicrbs.com.br
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.clicrbs.com.br/rs/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: _gada_id.2638=224740897.1476233724.97.1480362753.1480304147; _gada_ses.2638=*; abdAu=1; km_ai=qS%2F7HCJNQKrt%2F5CQuF8XqxaElgA%3D; clicRBSv2.skin.id=classico; clicRBSv2.skin.id=classico; clicRBSv2.skin=skinClassico; clicRBSv2.skin=skinClassico; _cb_ls=1; km_lv=x; km_abi=vruMW2azx6QvVeE64vuq6%2FBDLlk%3D; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; clicRBSv2.prefs=local=(1):uf=(1):usuario=-none; _sp_id.1d5d=027ace16bfa1c036.1476313146.31.1480288774.1480170057; nav23955=69ab101cfca3322ff50725a8009|2_334_12:5:4:1:17:3:13:11:10:14:15:2_912-913-101729-107799-107828:1:2:1:1234-1235-1236-1237-1231:1:3:42:BR:129-130-61-62-10:4-45-75-19-12:3; tt.nprf=74; _dc_gtm_UA-52642317-9=1; kvcd=1480362336851; km_vs=1; RBS=JA_186.213.163.217.299271480362590979; __utmt=1; __utma=1.224740897.1476225228.1480362469.1480362469.1; __utmb=1.3.10.1480362469; __utmc=1; __utmz=1.1480362469.1.1.utmcsr=zh.cl
+

@@ -1,0 +1,5 @@
+{
+	"interface":"wlp7s0",
+	"ip_lease_time":3600,
+	"dns_servers":["8.8.8.8","8.8.4.4"]
+}

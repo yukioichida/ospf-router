@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html ng-app="monitor">
+  <head>
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="../requests.json"></script>
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap-theme.css">
+  </head>
+
+  <body ng-controller="MonitorCtrl" class="container">
+    <div class="jumbotron">
+      <h4 style="float: left;">{{title}}</h4>
+      <button type="button" class="btn btn-primary" style="float:right" onClick="window.location.href=window.location.href">Atualizar</button>
+      <input class="form-control" type="text" ng-model="criteria" placeholder="O que você deseja buscar?"/>
+    <table class="table table-strited">
+      <tr>
+        <th style="text-align:center"  ><a href="" ng-click="orderBy('data')">Data - Hora</a></th>
+        <th style="text-align:center"  ><a href="" ng-click="orderBy('ip')">Endereço IP Host</a></th>
+        <th style="text-align:center"  ><a href="" ng-click="orderBy('name')">Nome do Host</a></th>
+        <th style="text-align:center"  ><a href="" ng-click="orderBy('url')">URL</a></th>
+      </tr>
+      <tr ng-repeat="require in requires | filter:criteria | orderBy:orderByType:direction">
+        <td style="text-align:center"  >{{require.data}}</td>
+        <td style="text-align:center"  >({{require.ip}})</td>
+        <td style="text-align:center" ng-show="!require.name">não identificado</td>
+        <td style="text-align:center"  ng-show="!!require.name">{{require.name}}</td>
+        <td><a ng-href="{{require.url}}">{{require.url | limitTo: 45}}</a></td>
+      </tr>
+    </table>
+    </div>
+    <div style="text-align:center">
+      Criado por Alexandre Yukio Ichida, Lucas Ranzi, Lorenzo Manica
+    </div>
+  </body>
+</html>
