@@ -2,9 +2,17 @@
 # -*- coding: utf-8 -*-
 
 
-OSPF_HEADER_MASK = '! B B H I I B B I I'
+OSPF_HEADER_MASK = '! B B H 4s 4s H H 8s'
 
-OSPF_HELLO_MASK = '! I H B B I I I I'
+# ultimo 4s se refere ao ip do roteador adjascente
+OSPF_HELLO_MASK = '! 4s H B B I 4s 4s 4s'
+
+# lsa_header vazio
+OSPF_DB_DESC_MASK = '! H B B 4s 20s'
+
+# request
+OSPF_LSA_REQUEST_MASK = '! 4s 4s 4s'
+
 
 
 class OSPF:
@@ -20,9 +28,57 @@ class OSPF:
         self.auth_type = auth_type
         self.auth_data = auth_data
 
-    def header_raw_data(self, packet_length):
-        return struct.pack("! 6s 6s H", raw_mac_dest, raw_mac_src, self.protocol)
-
     def hello_packet(self, net_mask, hello_interval, options, priority, router_dead_interval,
-                     designated_router, bkp_designated_router, neighbor_id):
-        hello_data = struct.pack(OSPF, raw_mac_dest, raw_mac_src, self.protocol)
+                     designated_router_ip, bkp_designated_router_ip, neighbor_ip):
+        
+        hello_data = struct.pack(OSPF_HELLO_MASK, 
+                                net_mask, 
+                                hello_interval, 
+                                options,
+                                priority,
+                                router_dead_interval,
+                                designated_router_ip,
+                                bkp_designated_router_ip,
+                                neighbor_ip)
+        length = len(hello_data)
+        header_data = self.header_pack(length)
+        return header_data + hello_data
+
+
+
+    def db_desc_packet(self, 
+                        mtu_interface, 
+                        hello_interval, 
+                        options,
+                        control_bits, 
+                        dd_seq_number, 
+                        lsa_header):
+        
+        db_desc_packet = struct.pack(OSPF_DB_DESC_MASK, 
+                                mtu_interface,
+                                hello_interval,
+                                control_bits,
+                                dd_seq_number,
+                                lsa_header)
+        length = len(hello_data)
+        header_data = self.header_pack(length)
+        return header_data + db_desc_packet
+
+
+
+    def lsa_request_packet(self, 
+                            ls_type, 
+                            link_state_id, 
+                            adv_router_ip):
+        
+        lsa_request_packet = struct.pack(OSPF_LSA_REQUEST_MASK, 
+                                ls_type, 
+                                link_state_id, 
+                                adv_router_ip)
+        length = len(hello_data)
+        header_data = self.header_pack(length)
+        return header_data + lsa_request_packet
+
+
+
+
