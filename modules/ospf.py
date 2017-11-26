@@ -5,18 +5,25 @@ import socket
 import struct
 
 OSPF_VERSION = 2
-
 OSPF_HEADER_MASK = '! B B H 4s 4s H H xxxxxxxx'
-
 # ultimo 4s se refere ao ip do roteador adjascente
 OSPF_HELLO_MASK = '! 4s H B B I 4s 4s 4s'
-
-# lsa_header vazio
-OSPF_DB_DESC_MASK = '! H B B 4s 20s'
-
 # request
 OSPF_LSA_REQUEST_MASK = '! 4s 4s 4s'
 
+
+# intervalo de 20 segundos
+HELLO_INTERVAL = 20
+# Prioridade alta para eleição do master
+ROUTER_PRIORITY = 0xff
+ROUTER_DEAD_INTERVAL = 40
+OSPF_HELLO_OPTION = 0x02
+
+# db description constants
+MTU_INTERFACE = 1500
+DB_DESC_OPTION = 2
+
+#OSPF Types
 OSPF_HELLO_TYPE = 0x01
 OSPF_DBDESC_TYPE = 0x02
 OSPF_LSA_REQ_TYPE = 0x03
@@ -61,8 +68,7 @@ class OSPF:
         return header_packet
 
 
-    def hello_packet(self, net_mask, hello_interval, options, priority, router_dead_interval,
-                     designated_router_ip, bkp_designated_router_ip, neighbor_ip):
+    def hello_packet(self, net_mask, designated_router_ip, bkp_designated_router_ip, neighbor_ip):
 
         net_mask_data = socket.inet_aton(net_mask)
         neighbor_ip = socket.inet_aton(neighbor_ip)
@@ -70,12 +76,12 @@ class OSPF:
         designated_router_ip = socket.inet_aton(designated_router_ip)
 
 
-        hello_data = struct.pack(OSPF_HELLO_MASK,
+        hello_data = struct.pack('! 4s H B B I 4s 4s 4s',
                                  net_mask_data,
-                                 hello_interval,
-                                 options,
-                                 priority,
-                                 router_dead_interval,
+                                 HELLO_INTERVAL,
+                                 OSPF_HELLO_OPTION,
+                                 ROUTER_PRIORITY,
+                                 ROUTER_DEAD_INTERVAL,
                                  designated_router_ip,
                                  bkp_designated_router_ip,
                                  neighbor_ip)
@@ -83,17 +89,14 @@ class OSPF:
         return header_data + hello_data
 
     def db_desc_packet(self,
-                       mtu_interface,
-                       hello_interval,
-                       options,
-                       control_bits,
-                       dd_seq_number,
-                       lsa_header):
-        db_desc_packet = struct.pack(OSPF_DB_DESC_MASK,
-                                     mtu_interface,
-                                     hello_interval,
-                                     control_bits,
-                                     dd_seq_number,
-                                     lsa_header)
+                        control_bits,
+                        dd_seq_number):
+
+
+        db_desc_packet = struct.pack('! H B B I',
+                                    MTU_INTERFACE,
+                                    DB_DESC_OPTION,
+                                    control_bits,
+                                    dd_seq_number)
         header_data = self.header_pack(OSPF_DBDESC_TYPE, db_desc_packet)
         return header_data + db_desc_packet
