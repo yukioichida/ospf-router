@@ -2,22 +2,25 @@
 # -*- coding: utf-8 -*-
 
 from util import ip_checksum
+import socket
+import struct
 
 DEFAULT_OPCODE = 0x45  # IPV4 com 20 bytes de cabeçalho
 DEFAULT_SERVICE = 0x00
 ipv4_mask = "! b b H H H b b H 4s 4s"
+OSPF_PROTOCOL = 0x59
 
 
 # Datagrama IP
 class IP:
-    def __init__(self, sender, receiver, data_size, protocol=0x11):
+    def __init__(self, sender, receiver, data_size):
         self.sender = socket.inet_aton(sender)
         self.receiver = socket.inet_aton(receiver)
         self.size = data_size + 20  # acrescenta o tamanho do cabeçalho IP
         self.identification = 0x0000
         self.fragment = 0x0000  # dont fragment 40 + fragment offset 00
         self.ttl = 0x40  # 64 - 0x40
-        self.protocol = protocol
+        self.protocol = OSPF_PROTOCOL
         self.padding = 0x0000
 
     @classmethod
