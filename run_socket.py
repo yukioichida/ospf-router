@@ -31,14 +31,13 @@ NO_MORE = 0x01 #000
 
 
 
-
 def base_package(length, dst_ip='224.0.0.5', dst_mac='01:00:5e:00:00:05'):
     #FAKE MACs e FAKE IPs
     ip = IP('10.32.143.201', dst_ip, length)
     ethernet_packet = Ethernet(dst_mac, '84:8f:69:bf:bd:eb')
     # ethernet_packet = Ethernet('c8:9c:1d:0e:0b:37', '84:8f:69:bf:bd:eb')
     # OSPF em cima de IP, que é em cima de Ethernet
-    return ethernet_packet.raw_format() + ip.raw_format() 
+    return ethernet_packet.raw_format() + ip.raw_format()
 
 
 
@@ -90,6 +89,30 @@ def main():
         # tem q incluir o nro de sequencia, que vai ser o i
     #    db_desc_package = ...
     #    s.send(db_desc_package)
+    while 1 == 1:
+        packet = s.recvfrom(65576)
+        headers = packet[0]
+        eth_header = struct.unpack('! 6s 6s H', headers[0:14])
+        ipv4_header = struct.unpack('! 8x B B 2x 4s 4s', headers[14:34])
+        protocol = ipv4_header[1]
+
+        # Verifica se é ospf
+        if protocol == 0x89:
+            ospf_header = struct.unpack('! B B H 4s 4s H H xxxxxxxx', headers[34:57])
+            # verifica se o pacote ospf é um LSA UPDATE
+            if ospf_header[1] == 0x04:
+                rest_of_package = headers[58:]
+                lsa_qtd = len(rest_of_package)
+                actual_pos = 58
+
+                lsa_headers = []
+                while actual_pos < len(headers):
+                    #desmonta o cabeçalho do LSA da posição atual + 20 (que é o tamanho total do cabeçalho)
+                    lsa_header = headers[actual_pos:actual_pos+20]
+                    unpacked_lsa = struct.unpack('! H B B 4s 4s I H H ', lsa_header)
+                    lsa_length = unpacked_lsa[7]
+                    lsa_headers.append(lsa_header)
+                    actual_pos += lsa_length
 
     
     
