@@ -15,7 +15,7 @@ OSPF_LSA_REQUEST_MASK = '! 4s 4s 4s'
 # intervalo de 20 segundos
 HELLO_INTERVAL = 10
 # Prioridade alta para eleição do master
-ROUTER_PRIORITY = 0xff
+ROUTER_PRIORITY = 0x00
 ROUTER_DEAD_INTERVAL = 40
 OSPF_HELLO_OPTION = 0x02
 
@@ -27,6 +27,7 @@ DB_DESC_OPTION = 2
 OSPF_HELLO_TYPE = 0x01
 OSPF_DBDESC_TYPE = 0x02
 OSPF_LSA_REQ_TYPE = 0x03
+OSPF_LSA_ACK_TYPE = 0x05
 
 
 class OSPF:
@@ -100,3 +101,9 @@ class OSPF:
                                     dd_seq_number)
         header_data = self.header_pack(OSPF_DBDESC_TYPE, db_desc_packet)
         return header_data + db_desc_packet
+
+    def lsa_ack_packet(self, packets):
+
+        header_data = self.header_pack(OSPF_LSA_ACK_TYPE, packets)
+
+        return header_data + packets

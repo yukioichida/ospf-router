@@ -12,7 +12,7 @@ from modules.ospf import *
 IF_NAME = 'enp6s0'#'wlp3s0'
 
 # Identificador do roteador fantasma
-PHANTON_ID = '2.2.2.2'
+PHANTON_ID = '255.255.255.255'
 # area configurada no roteador OSPF vitima 
 AREA_ID = '0.0.0.0'
 
@@ -96,14 +96,22 @@ def main():
         ipv4_header = struct.unpack('! 8x B B 2x 4s 4s', headers[14:34])
         protocol = ipv4_header[1]
 
+        # print 'protocolo ipv4 ' + str(protocol)
+
         # Verifica se é ospf
-        if protocol == 0x89:
-            ospf_header = struct.unpack('! B B H 4s 4s H H xxxxxxxx', headers[34:57])
+        if protocol == 0x59:
+
+            ospf_header = struct.unpack('! B B H 4s 4s H H xxxxxxxx', headers[34:58])
+            
+            print 'CHEGOU OSPF '
+            print ospf_header
             # verifica se o pacote ospf é um LSA UPDATE
             if ospf_header[1] == 0x04:
                 rest_of_package = headers[58:]
-                lsa_qtd = len(rest_of_package)
-                actual_pos = 58
+                
+                actual_pos = 62
+
+                print 'CHEGOU LSA UPDATE'
 
                 lsa_headers = []
                 while actual_pos < len(headers):
@@ -113,6 +121,14 @@ def main():
                     lsa_length = unpacked_lsa[7]
                     lsa_headers.append(lsa_header)
                     actual_pos += lsa_length
+                
+                lsa_ack_pkt = ''
+                for header in lsa_headers:
+                    lsa_ack_pkt = lsa_ack_pkt + header
+
+                lsa_ack_pkt = ospf.lsa_ack_packet(lsa_ack_pkt)
+
+                s.send(base_package(len(lsa_ack_pkt), DESIGNATED_ROUTER, DESIGNATED_ROUTER_MAC) + lsa_ack_pkt)
 
     
     
