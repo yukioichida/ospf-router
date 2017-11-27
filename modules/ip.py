@@ -19,7 +19,7 @@ class IP:
         self.size = data_size + 20  # acrescenta o tamanho do cabeçalho IP
         self.identification = 0x0000
         self.fragment = 0x0000  # dont fragment 40 + fragment offset 00
-        self.ttl = 0x40  # 64 - 0x40
+        self.ttl = 0x01  # 64 - 0x40
         self.protocol = OSPF_PROTOCOL
         self.padding = 0x0000
 

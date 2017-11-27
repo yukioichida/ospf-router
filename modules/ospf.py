@@ -13,7 +13,7 @@ OSPF_LSA_REQUEST_MASK = '! 4s 4s 4s'
 
 
 # intervalo de 20 segundos
-HELLO_INTERVAL = 20
+HELLO_INTERVAL = 10
 # Prioridade alta para eleição do master
 ROUTER_PRIORITY = 0xff
 ROUTER_DEAD_INTERVAL = 40
@@ -35,8 +35,8 @@ class OSPF:
     """
 
     def __init__(self, router_id, area_id):
-        self.router_id = router_id
-        self.area_id = area_id
+        self.router_id = socket.inet_aton(router_id)
+        self.area_id = socket.inet_aton(area_id)
 
 
     def header_pack(self, ospf_type, payload_data):
