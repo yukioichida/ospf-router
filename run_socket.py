@@ -12,7 +12,7 @@ from modules.ospf import *
 IF_NAME = 'enp6s0'#'wlp3s0'
 
 # Identificador do roteador fantasma
-PHANTON_ID = '255.255.255.255'
+PHANTON_ID = '255.255.255.250'
 # area configurada no roteador OSPF vitima 
 AREA_ID = '0.0.0.0'
 
@@ -132,9 +132,11 @@ def main():
 
                 break
     
+    sleep(1)
+
     while 1 == 1:
         s.send(hello_packet(ospf))    
-        sleep(5)
+        sleep(10)
     
 if __name__ == '__main__':
     main()
